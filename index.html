@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+        }
+
+        .header {
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: steelblue;
+            height: 90px;
+            margin-top:-10px
+        }
+
+        .logo {
+            /* display: block; */
+            width: 25%;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        .logo span {
+            color: red;
+            border: 1px solid black;
+            background: white;
+            padding: 2px;
+            margin: 0 5px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 80%;
+            
+        }
+
+        .search-bar {
+            width: 250px;
+            float: right;
+            margin-left: 70px;
+        }
+
+        .nav-bar {
+            background: lime;
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: white;
+            padding: 5px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: 0.5s all ease-in-out;
+        }
+     a:hover{
+        color: brown;
+        background: #000;
+     }
+        .template-img {
+            /* width:350px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.7;
+
+        }
+
+        .temp-img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        footer p {
+            color: white;
+        }
+
+        .footer-bar {
+            background: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .section h3 {
+            color: white;
+            margin: 10px 0;
+            padding: 7px;
+            /* background: lime; */
+        }
+         
+        .movies {
+            display:flex;
+            align-items: center;
+            justify-content:start;
+            flex-wrap:wrap;
+            margin-left:75px;
+        }
+
+        .movie-box {
+            width: 420px;
+            height:450px;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid white;
+            transition: 0.5s all ease-in-out;
+            opacity: 0.5;
+        }
+        .movie-box:hover{
+            width:520px;
+            box-shadow: 5px 25px 55px 10px white;
+            opacity: 1;
+        }
+
+        img {
+            width: 100%;
+            height:355px;
+            object-position: center;
+            object-fit: cover;
+        }
+
+        .movie-btn button {
+            padding: 2px;
+        }
+
+        .title {
+            padding: 10px;
+        }
+
+        .title h3 {
+            color: white;
+            font-size: 25px;
+        }
+        @media screen and (max-width:620px) {
+             body{
+                background: white;
+             }
+             .header{
+                flex-direction: column;
+             }
+             .template-img{
+                opacity: 1;
+             }
+             .nav{
+                flex-direction: column;
+             }
+             .section h3{
+                color: black;
+             }
+             .movies{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+             }
+             .movie-box{
+                width:300px;
+                opacity: 1;
+             }
+             .movie-box:hover{
+                width:400px;
+                box-shadow: 5px 25px 55px 10px black;
+             }
+           .title h3{
+            color: black;
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="logo">Hit<span>myShow</span></div>
+            <div class="nav">
+                <div class="search-bar">
+                    <input type="text" />
+                    <button>search</button>
+                </div>
+                <div class="btn">
+                    <button>Login</button>
+                    <button>Registration</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <a href="">Advanture</a>
+            <a href="">Horror</a>
+            <a href="">Action</a>
+            <a href="">Commedy</a>
+        </div>
+
+        <div class="template-img">
+            <img class="temp-img" src="img/temp1.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <div class="section1-advent">
+        <div class="section">
+            <h3>Advanture Movies</h3>
+        </div>
+        <div class="movies">
+
+            <div class="movie-box">
+                <img src="img/galaxy.jpg" alt="">
+                <div class="title">
+                    <h3>Gardian of Galaxy</h3>
+                    <div class="movie-btn">
+                        <button>watch</button>
+                        <button>download</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-box">
+                <img src="img/x_man.jpg" alt="">
+                <div class="title">
+                    <h3>X-man</h3>
+                    <div class="movie-btn">
+                        <button>watch</button>
+                        <button>download</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-box">
+                <img src="img/avatar.jpg" alt="">
+                <div class="title">
+                    <h3>Avatar</h3>
+                    <div class="movie-btn">
+                        <button>watch</button>
+                        <button>download</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-box">
+                <img src="img/dead.jpg" alt="">
+                <div class="title">
+                    <h3>Dead Pool</h3>
+                    <div class="movie-btn">
+                        <button>watch</button>
+                        <button>download</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-box">
+                <img src="img/maxtrix.jpeg" alt="">
+                <div class="title">
+                    <h3>maxtrix</h3>
+                    <div class="movie-btn">
+                        <button>watch</button>
+                        <button>download</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
+    <div class="section1-advent">
+        <div class="section">
+            <h3>Horror Movies</h3>
+        </div>
+        <div class="movies">
+
+            <div class="movie-box">
+                <img src="img/1.jpeg" alt="">
+                <div class="title">
+                    <h3>Bloody Hand</h3>
+                    <div class="movie-btn">
+                        <button>watch</button>
+                        <button>download</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-box">
+                <img src="img/2.jpeg" alt="">
+                <div class="title">
+                    <h3>The Haunting</h3>
+                    <div class="movie-btn">
+                        <button>watch</button>
+                        <button>download</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-box">
+                <img src="img/3.jpg" alt="">
+                <div class="title">
+                    <h3>1920</h3>
+                    <div class="movie-btn">
+                        <button>watch</button>
+                        <button>download</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-box">
+                <img src="img/4.jpg" alt="">
+                <div class="title">
+                    <h3>Awakened</h3>
+                    <div class="movie-btn">
+                        <button>watch</button>
+                        <button>download</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer-bar">
+        <p>Copy@ bookmyshow.com</p>
+    </footer>
+</body>
+
+</html>
