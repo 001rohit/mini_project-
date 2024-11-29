@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #000;
+        }
+        .container-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height:85vh;
+            flex-wrap: wrap;
+        }
+        .box{
+            width:350px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            background: white;
+            color: white;
+            flex-direction: column;
+            cursor: pointer;
+            margin: 10px;
+            overflow: hidden;
+            border-radius:45px;
+            transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            box-shadow: 0 15px 15px brown;
+        }
+        .box:hover >.contain-box{
+            opacity: 1;
+        }
+        .box:hover  img{
+            width:490px;
+            filter: brightness(0.7);
+        }
+        .contain-box{
+            width:250px;
+            position: absolute;
+            text-align: center;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+        }
+        img{
+            width:280px;
+            height:350px;
+            object-fit: contain;
+            object-position: center;
+            transition: all 1s ease-in-out;
+        }
+        .header{
+            margin-top:20px;
+        }
+        .header h2{
+            color: white;
+            font-size:1.5rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>pet ❤️ lover</h2>
+    </div>
+    <div class="container-box">
+        <div class="box">
+                <div class="icon">
+                    <img src="1.jpeg" alt="">
+                </div>
+                  <div class="contain-box">
+                       <h1>Quotes 1</h1>
+                       <p>Dog never lie about love</p>
+                  </div>
+        </div>
+
+        <div class="box">
+                <div class="icon">
+                    <img src="2.jpeg" alt="">
+                </div>
+                  <div class="contain-box">
+                       <h1>Quotes 2</h1>
+                       <p>We can judge the heart of a man by his treatment of animals</p>
+                  </div>
+        </div>
+
+        <div class="box">
+                <div class="icon">
+                    <img src="3.jpg" alt="">
+                </div>
+                  <div class="contain-box">
+                       <h1>Quotes 3</h1>
+                       <p>Sometimes the best medicine is unconditional love from your pet.</p>
+                  </div>
+        </div>
+
+        <div class="box">
+                <div class="icon">
+                    <img src="4.jpg" alt="">
+                </div>
+                  <div class="contain-box">
+                       <h1>Quotes 4</h1>
+                       <p>You have left my life but you will never leave My heart</p>
+                  </div>
+        </div>
+        <div class="box">
+                <div class="icon">
+                    <img src="5.jpg" alt="">
+                </div>
+                  <div class="contain-box">
+                       <h1>Quotes 5</h1>
+                       <p>Nothing makes you smiles more than looking into the face of a Dog that loves you.</p>
+                  </div>
+        </div>
+        <div class="box">
+                <div class="icon">
+                    <img src="6.jpg" alt="">
+                </div>
+                  <div class="contain-box">
+                       <h1>Quotes 6</h1>
+                       <p>Not every person knows how to love a dog, but every dog knows how to love a person.</p>
+                  </div>
+        </div>
+
+    </div>
+</body>
+</html>
