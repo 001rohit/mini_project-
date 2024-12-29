@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Effect</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #0e0e0e;
+        }
+        .rain {
+            position: absolute;
+            width: 2px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.2);
+            bottom: 100%;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function createRain() {
+            const rain = document.createElement('div');
+            rain.classList.add('rain');
+            rain.style.left = `${Math.random() * window.innerWidth}px`;
+            rain.style.animationDuration = `${Math.random() * 1 + 0.5}s`;
+            document.body.appendChild(rain);
+            setTimeout(() => {
+                rain.remove();
+            }, 2000);
+        }
+
+        setInterval(createRain, 90);
+    </script>
+</body>
+</html>
